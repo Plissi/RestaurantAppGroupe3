@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Modèle.SalleRestauration
 {
-    class MaitreHotel
+    class MaitreHotel:IPersonne
     {
+        public Etat etate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int posX { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int posY { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         void accueillirClient()
         {
 
@@ -26,6 +30,16 @@ namespace Modèle.SalleRestauration
         void appelerChefRang()
         {
 
+        }
+
+        public int changerPosX()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int changerPosY()
+        {
+            throw new NotImplementedException();
         }
     }
 }

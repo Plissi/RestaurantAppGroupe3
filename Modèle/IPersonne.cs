@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle
 {
-    interface IPersonne
+    interface IPersonne:IPosition
     {
         Etat etate { get; set; }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle
 {
-    interface IMobile
+    interface IMobile:IPersonne
     {
         void seDeplacer();
         void attendre();
