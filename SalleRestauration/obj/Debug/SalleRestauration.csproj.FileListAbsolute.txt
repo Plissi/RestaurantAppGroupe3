@@ -1,0 +1,9 @@
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\SalleRestauration.exe.config
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\SalleRestauration.exe
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\SalleRestauration.pdb
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.csprojAssemblyReference.cache
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.Properties.Resources.resources
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.csproj.GenerateResource.cache
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.csproj.CoreCompileInputs.cache
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.exe
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.pdb

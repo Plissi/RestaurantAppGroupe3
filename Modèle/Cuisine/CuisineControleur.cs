@@ -8,10 +8,14 @@ namespace Modèle.Cuisine
 {
     public class CuisineControleur
     {
+        //Personnel
         ChefCuisine chefCuisine;
         List<ChefPartie> chefsPartie;
         List<CommisCuisine> commisCuisine;
         Plongeur plongeur;
+
+        //Matériel
+
 
         public CuisineControleur()
         {
