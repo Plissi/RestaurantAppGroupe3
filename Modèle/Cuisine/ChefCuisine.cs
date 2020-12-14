@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle.Cuisine
 {
-    class ChefCuisine: IPersonne
+    public class ChefCuisine: IPersonne
     {
         public Etat etate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posX { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

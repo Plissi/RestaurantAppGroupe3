@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace Modèle.SalleRestauration
 {
-    class Serveur : IMobile
+    public class Serveur : IMobile
     {
+        int id;
+        Carre carre;
+
         public Etat etate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posX { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posY { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public Serveur(int identification, Carre carre)
+        {
+            this.id = identification;
+            this.carre = carre;
+        }
         void servirCommande()
         {
 

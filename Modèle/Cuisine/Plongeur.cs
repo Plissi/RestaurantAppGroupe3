@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle.Cuisine
 {
-    class Plongeur:CommisCuisine
+    public class Plongeur:CommisCuisine
     {
         void faireVaisselle()
         {

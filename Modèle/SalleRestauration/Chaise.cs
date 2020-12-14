@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle.SalleRestauration
 {
-    class Chaise
+    public class Chaise
     {
     }
 }

@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace Modèle.SalleRestauration
 {
-    class Table
+    public class Table
     {
         List<Chaise> chaises;
+        int nombreChaises;
+        bool dispo = true;
+
+        public Table(int nbChaises)
+        {
+            this.nombreChaises = nbChaises;
+            chaises = new List<Chaise>();
+            for(int i=0; i<nbChaises; i++)
+            {
+                chaises.Add(new Chaise());
+            }
+        }
     }
 }

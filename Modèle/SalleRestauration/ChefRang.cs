@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace Modèle.SalleRestauration
 {
-    class ChefRang : IMobile
+    public class ChefRang : IMobile
     {
+        int id;
         Carre carre;
 
         public Etat etate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posX { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posY { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public ChefRang(int id, Carre carre)
+        {
+            this.id = id;
+            this.carre = carre;
+        }
 
         void distribuerCarte()
         {

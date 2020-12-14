@@ -1,0 +1,7 @@
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\bin\Debug\Modèle.exe.config
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\bin\Debug\Modèle.exe
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\bin\Debug\Modèle.pdb
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\obj\Debug\Modèle.csprojAssemblyReference.cache
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\obj\Debug\Modèle.csproj.CoreCompileInputs.cache
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\obj\Debug\Modèle.exe
+C:\Users\Pline\source\repos\RestaurantApp\Modèle\obj\Debug\Modèle.pdb

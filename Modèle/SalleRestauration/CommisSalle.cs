@@ -8,6 +8,10 @@ namespace Modèle.SalleRestauration
 {
     class CommisSalle: Serveur
     {
+        public CommisSalle(int identification, Carre carre) : base(identification, carre)
+        {
+        }
+
         void verifierTable()
         {
 
