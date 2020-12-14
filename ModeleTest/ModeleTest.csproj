@@ -13,4 +13,12 @@
     <PackageReference Include="coverlet.collector" Version="1.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SalleRestaurationTest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modèle\Modèle.csproj" />
+  </ItemGroup>
+
 </Project>
