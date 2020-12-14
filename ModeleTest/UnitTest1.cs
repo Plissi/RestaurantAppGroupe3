@@ -17,5 +17,10 @@ namespace ModeleTest
         {
             Assert.Equals(1, MaitreHotel.accueillirClient(1));
         }
+        
+        public void attribuerTablePassingTest()
+        {
+            Assert.Equals(1, MaitreHotel.accueillirClient(1));
+        }
     }
 }
