@@ -5,7 +5,7 @@ using Modèle.SalleRestauration;
 namespace ModeleTest
 {
     [TestClass]
-    public class UnitTest1
+    public class MaitreHotelTest
     {
         [TestMethod]
         public void accueillirClientFailingTest()

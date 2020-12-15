@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj": {}
+    "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj": {
+    "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj",
         "projectName": "ModeleTest",
-        "projectPath": "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj",
-        "packagesPath": "C:\\Users\\TLCS699777408\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\ModeleTest\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\ModeleTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TLCS699777408\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,8 +26,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj": {
-                "projectPath": "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj"
+              "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj": {
+                "projectPath": "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj"
               }
             }
           }
@@ -69,39 +69,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.8, 3.1.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\TLCS699777408\\.dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj": {
+    "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj",
         "projectName": "Modèle",
-        "projectPath": "C:\\Users\\TLCS699777408\\Documents\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\pc\\Desktop\\RestaurantApp\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj"
       },
       "frameworks": {
         "net472": {}
