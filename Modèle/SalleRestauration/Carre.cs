@@ -8,7 +8,7 @@ namespace Modèle.SalleRestauration
 {
     public class Carre
     {
-        List<Table> tables;
+        public List<Table> tables;
         public int id;
 
         public Carre(int rank)
