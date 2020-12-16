@@ -15,13 +15,14 @@ namespace Controleur
         int port = 5050; 
         IPAddress ip = Dns.GetHostEntry("localhost").AddressList[0];
         public TcpListener cuisineServer;
-        TcpClient salleClient;
+        public TcpClient salleClient;
 
 
         public Cuisine(CuisineControleur cuisine)
         {
             this.cuisine = cuisine;
             cuisineServer = new TcpListener(ip, port);
+            salleClient = default(TcpClient);
         }
     }
 }

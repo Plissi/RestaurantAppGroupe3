@@ -48,6 +48,7 @@
     <Compile Include="Memento.cs" />
     <Compile Include="Originator.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgrammeSalle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant.cs" />
     <Compile Include="Salle.cs" />

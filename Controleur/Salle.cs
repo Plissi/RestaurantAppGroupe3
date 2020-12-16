@@ -11,13 +11,15 @@ namespace Controleur
 {
     public class Salle
     {
-        SalleContoleur salle;
-        TcpClient salleClient;
-        
-        public Salle(SalleContoleur salle, string ip, int port)
+        public SalleContoleur salle;
+        public  TcpClient salleClient;
+        int port = 5050;
+        IPAddress ip = Dns.GetHostEntry("localhost").AddressList[0];
+
+        public Salle(SalleContoleur salle)
         {
             this.salle = salle;
-            salleClient = new TcpClient(ip, port);
+            salleClient = new TcpClient("localhost", port);
         }
     }
 }
