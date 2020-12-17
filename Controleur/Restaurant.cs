@@ -21,7 +21,7 @@ namespace Controleur
 
         void pause()
         {
-
+            Console.WriteLine();
         }
 
         void launch()

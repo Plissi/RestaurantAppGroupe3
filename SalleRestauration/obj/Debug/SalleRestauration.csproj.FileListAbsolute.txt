@@ -7,3 +7,11 @@ C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleResta
 C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.csproj.CoreCompileInputs.cache
 C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.exe
 C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.pdb
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\Controleur.exe
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\Modèle.exe
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\Controleur.pdb
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\Controleur.exe.config
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\Modèle.pdb
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\bin\Debug\Modèle.exe.config
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.Form1.resources
+C:\Users\Pline\source\repos\RestaurantApp\SalleRestauration\obj\Debug\SalleRestauration.csproj.CopyComplete

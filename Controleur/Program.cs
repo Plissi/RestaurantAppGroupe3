@@ -4,41 +4,22 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Controleur
 {
     class Program
     {
-        private static TcpListener serveur;
-        private static TcpClient client;
 
         static void Main(string[] args)
         {
             Restaurant restaurant = new Restaurant();
             Cuisine cuisine = new Cuisine(restaurant.cuisine);
-            serveur = cuisine.cuisineServer;
-            client = cuisine.salleClient;
+            Console.WriteLine("L'équipe de la cuisine est prête");
 
-            try
-            {
-                cuisine.cuisineServer.Start();
-                Console.WriteLine("Bienvenu dans la Cuisine...");
-                Console.ReadLine();
+            Thread t = new Thread(new ThreadStart(cuisine.StartServer));
+            t.Start();
 
-            }
-            catch (Exception e)
-            {
-
-                Console.WriteLine(e.ToString());
-                Console.ReadLine();
-            }
-
-            while (true)
-            {
-                client = serveur.AcceptTcpClient();
-                Console.WriteLine("Salle connectée");
-
-            }
         }
     }
 }

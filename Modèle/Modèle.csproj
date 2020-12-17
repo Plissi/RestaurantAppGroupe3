@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLcad.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Commande.cs" />
     <Compile Include="Cuisine\ChefCuisine.cs" />
     <Compile Include="Cuisine\ChefPartie.cs" />
     <Compile Include="Cuisine\CommisCuisine.cs" />
@@ -51,7 +54,7 @@
     <Compile Include="Cuisine\Matériel\Autocuiseur.cs" />
     <Compile Include="Cuisine\Matériel\BolSalade.cs" />
     <Compile Include="Cuisine\Matériel\Casserole.cs" />
-    <Compile Include="Cuisine\Matériel\CouteurCuisine.cs" />
+    <Compile Include="Cuisine\Matériel\CouteauCuisine.cs" />
     <Compile Include="Cuisine\Matériel\Entonnoir.cs" />
     <Compile Include="Cuisine\Matériel\Evier.cs" />
     <Compile Include="Cuisine\Matériel\FeuCuisson.cs" />

@@ -8,9 +8,10 @@ namespace Modèle.SalleRestauration
 {
     public class Table
     {
-        List<Chaise> chaises;
-        int nombreChaises;
-        bool dispo = true;
+        public List<Chaise> chaises;
+        public int nombreChaises;
+        public bool dispo = true;
+        public int numero;
 
         public Table(int nbChaises)
         {

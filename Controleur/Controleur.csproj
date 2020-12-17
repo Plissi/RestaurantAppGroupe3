@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLmapTB_A2_WS2.cs" />
+    <Compile Include="CLprocessus.cs" />
     <Compile Include="Cuisine.cs" />
     <Compile Include="IMememto.cs" />
     <Compile Include="Memento.cs" />
     <Compile Include="Originator.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProgrammeSalle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant.cs" />
     <Compile Include="Salle.cs" />

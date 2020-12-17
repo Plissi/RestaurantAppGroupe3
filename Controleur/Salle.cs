@@ -12,14 +12,49 @@ namespace Controleur
     public class Salle
     {
         public SalleContoleur salle;
-        public  TcpClient salleClient;
         int port = 5050;
-        IPAddress ip = Dns.GetHostEntry("localhost").AddressList[0];
+        public IPAddress ip;
+        public IPEndPoint endPoint;
+        public Socket sender;
 
         public Salle(SalleContoleur salle)
         {
             this.salle = salle;
-            salleClient = new TcpClient("localhost", port);
+        }
+
+        public void StartClient()
+        {
+            try
+            {
+                byte[] bytes = new byte[1024];
+                ip = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0];
+                endPoint = new IPEndPoint(ip, port);
+                sender = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+
+                try
+                {
+                    sender.Connect(endPoint);
+                    Console.WriteLine("L'équipe de la salle est prête");
+                    Console.ReadLine();
+                    /*byte[] msg = Encoding.ASCII.GetBytes("Test");
+                    int byteSent = sender.Send(msg);
+                    int byteRec = sender.Receive(bytes);
+                    sender.Shutdown(SocketShutdown.Both);
+                    sender.Close();*/
+                }
+                catch (Exception e)
+                {
+
+                    Console.WriteLine(e.ToString());
+                    Console.ReadLine();
+                }
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.ToString());
+                Console.ReadLine();
+            }
         }
     }
 }

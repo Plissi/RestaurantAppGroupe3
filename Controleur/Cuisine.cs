@@ -13,16 +13,40 @@ namespace Controleur
     {
         CuisineControleur cuisine;
         int port = 5050; 
-        IPAddress ip = Dns.GetHostEntry("localhost").AddressList[0];
-        public TcpListener cuisineServer;
-        public TcpClient salleClient;
+        public IPAddress ip = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0];
+        public IPEndPoint endPoint;
+        public Socket s ;
 
 
         public Cuisine(CuisineControleur cuisine)
         {
             this.cuisine = cuisine;
-            cuisineServer = new TcpListener(ip, port);
-            salleClient = default(TcpClient);
+        }
+
+        public void StartServer()
+        {
+            try
+            {
+                endPoint = new IPEndPoint(ip, port);
+                s = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                s.Bind(endPoint);
+                s.Listen(10);
+
+                while (true)
+                {
+                    Console.WriteLine("En attente de la salle");
+                    Socket handler = s.Accept();
+                    Console.WriteLine("Salle connectée");
+                    Console.ReadLine();
+                }
+
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.ToString());
+                Console.ReadLine();
+            }
         }
     }
 }

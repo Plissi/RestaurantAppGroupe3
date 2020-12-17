@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle.Cuisine.Matériel
 {
-    public class CouteurCuisine
+    public class CouteauCuisine
     {
     }
 }

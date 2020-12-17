@@ -8,7 +8,7 @@ namespace Modèle.Cuisine.Matériel
 {
     public class Frigo
     {
-        int capacite;
+        public int capacite;
 
         public Frigo()
         {
