@@ -16,7 +16,6 @@ namespace Modèle.SalleRestauration
 
         public SalleContoleur()
         {
-            maitre = new MaitreHotel();
             
             serveurs = new List<Serveur>();
             chefRangs = new List<ChefRang>();
@@ -25,6 +24,9 @@ namespace Modèle.SalleRestauration
             carres = new List<Carre>();
             carres.Add(new Carre(1));
             carres.Add(new Carre(2));
+            
+            
+            maitre = new MaitreHotel(carres);
 
             commisSalle = new CommisSalle(1, carres[0]);
 

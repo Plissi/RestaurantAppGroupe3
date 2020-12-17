@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pline\\source\\repos\\RestaurantApp\\ModeleTest\\ModeleTest.csproj": {}
+    "F:\\Projet_Sys\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pline\\source\\repos\\RestaurantApp\\ModeleTest\\ModeleTest.csproj": {
+    "F:\\Projet_Sys\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pline\\source\\repos\\RestaurantApp\\ModeleTest\\ModeleTest.csproj",
+        "projectUniqueName": "F:\\Projet_Sys\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj",
         "projectName": "ModeleTest",
-        "projectPath": "C:\\Users\\Pline\\source\\repos\\RestaurantApp\\ModeleTest\\ModeleTest.csproj",
-        "packagesPath": "C:\\Users\\Pline\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pline\\source\\repos\\RestaurantApp\\ModeleTest\\obj\\",
+        "projectPath": "F:\\Projet_Sys\\RestaurantAppGroupe3\\ModeleTest\\ModeleTest.csproj",
+        "packagesPath": "C:\\Users\\Gallimard\\.nuget\\packages\\",
+        "outputPath": "F:\\Projet_Sys\\RestaurantAppGroupe3\\ModeleTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Pline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gallimard\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +29,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Projet_Sys\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj": {
+                "projectPath": "F:\\Projet_Sys\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,48 +44,23 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[2.1.1, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[2.1.1, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.7.1, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[1.3.0, )"
-            }
-          },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
+      }
+    },
+    "F:\\Projet_Sys\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Projet_Sys\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj",
+        "projectName": "Modèle",
+        "projectPath": "F:\\Projet_Sys\\RestaurantAppGroupe3\\Modèle\\Modèle.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

@@ -15,7 +15,7 @@ namespace Modèle.SalleRestauration
 
         public Table(int nbChaises)
         {
-            this.nombreChaises = nbChaises;
+            nombreChaises = nbChaises;
             chaises = new List<Chaise>();
             for(int i=0; i<nbChaises; i++)
             {
