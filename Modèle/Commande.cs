@@ -11,9 +11,9 @@ namespace Modèle
 {
     public class Commande
     {
-        int id;
-        int idRecette;
-        int prix;
+        public int id;
+        public int idRecette;
+        public int prix;
 
         public Commande(int id, int idRecette, int prix)
         {

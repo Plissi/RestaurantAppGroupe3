@@ -18,11 +18,14 @@ namespace SalleRestauration
         int hh = 10;
         int mm = 0;
         int ss = 0;
-
+        int client = new Random().Next(1, 10);
+        Controleur.CLprocessus processus;
+        string nomTable;
         public Form1()
         {
             InitializeComponent();
-
+            processus = new CLprocessus();
+            nomTable = "Commande";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,8 +41,32 @@ namespace SalleRestauration
             Salle salle = new Salle(restaurant.salle);
 
             Thread threadClient = new Thread(new ThreadStart(salle.StartClient));
-
             threadClient.Start();
+
+            Thread.Sleep(1000);
+
+            Thread threadAddClient = new Thread(new ThreadStart(salle.addClient));
+            threadAddClient.Start();
+            //salle.addClient();
+
+            Thread.Sleep(1000);
+
+            int num = restaurant.salle.maitre.attribuerTable(client);
+            Console.WriteLine("Table " + num);
+
+            Console.WriteLine("Commande en cours...");
+            //salle.nouveauClient().commander();
+            Console.WriteLine("Commande passée...");
+
+            var picture = new PictureBox
+            {
+                Name = "client",
+                Size = new  Size(16, 16),
+                Location = new Point(100, 100)
+            };
+            this.Controls.Add(picture);
+
+            //processus.afficher(nomTable);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -61,13 +88,13 @@ namespace SalleRestauration
                 ss = 0;
             }
 
-            if (mm == 60)
+            if (mm == 59)
             {
                 hh++;
                 mm = 0;
             }
 
-            if(hh > 23)
+            if(hh > 22)
             {
                 hh = 0;
             }
@@ -102,6 +129,11 @@ namespace SalleRestauration
             }
 
             label1.Text = time;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,9 +7,8 @@ using Modèle.SalleRestauration;
 
 namespace Modèle
 {
-    interface IClientFactory
+    public interface IClientFactory
     {
-        int nombre { get; set; }
         Table table { get; set; }
 
         void creerClient();

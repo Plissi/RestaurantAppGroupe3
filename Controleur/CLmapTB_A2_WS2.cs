@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Middleware
+namespace Controleur
 {
     public class CLmapTB_A2_WS2
     {
@@ -40,6 +40,7 @@ namespace Middleware
         //ajoute la un enregistrement
         public string insert()
         {
+            rq_sql = "INSERT INTO dbo.Commande values(" +"  ";
             return rq_sql;
         }
 

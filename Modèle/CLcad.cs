@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CAD
+namespace Modèle
 {
     public class CLcad
     {
@@ -25,6 +25,7 @@ namespace CAD
             this.dataAdapter = null;
             this.commande = null;
             this.dataSet = new DataSet();
+            Console.WriteLine("Base de données connectée");
 
         }
 

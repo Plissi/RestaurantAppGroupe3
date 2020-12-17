@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using Modèle.SalleRestauration;
+using Modèle;
 
 namespace Controleur
 {
@@ -16,10 +17,12 @@ namespace Controleur
         public IPAddress ip;
         public IPEndPoint endPoint;
         public Socket sender;
+        public List<Client> clients;
 
         public Salle(SalleContoleur salle)
         {
             this.salle = salle;
+            clients = new List<Client>();
         }
 
         public void StartClient()
@@ -28,6 +31,7 @@ namespace Controleur
             {
                 byte[] bytes = new byte[1024];
                 ip = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0];
+                //ip = Dns.GetHostEntry("192.168.43.141").AddressList[0];
                 endPoint = new IPEndPoint(ip, port);
                 sender = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
@@ -56,5 +60,23 @@ namespace Controleur
                 Console.ReadLine();
             }
         }
+
+        public Client nouveauClient()
+        {
+            Client client = new Client();
+            clients.Add(client);
+            Console.WriteLine("Il y a " + client.nombre + " nouveau(x) client(s)");
+            return client;
+        }
+        
+        public void addClient()
+        {
+            Client client = new Client();
+            clients.Add(client);
+            Console.WriteLine("Il y a " + client.nombre +" nouveau(x) client(s)");
+            Console.WriteLine("Le Chef de rang arrive...");
+
+        }
+
     }
 }

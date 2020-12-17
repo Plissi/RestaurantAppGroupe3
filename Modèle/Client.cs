@@ -8,19 +8,10 @@ using System.Threading;
 
 namespace Modèle
 {
-    class Client : IClientFactory
+    public class Client : Creator, IClientFactory
     {
         Commande commande;
-        public int nombre {
-            get
-            {
-                return nombre;
-            }
-            set {
-                Random num = new Random();
-                nombre = num.Next(1, 10);
-            } 
-        }
+        public int nombre;
         public Table table { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void faire()
@@ -29,16 +20,23 @@ namespace Modèle
         }
         public void creerClient()
         {
-            
+            Thread.Sleep(5000);
         }
 
         public void commander()
         {
             commande = new Commande(new Random().Next(), new Random().Next(1, 13), 5000);
-            Console.Write("Commande passée pour " + nombre);
+            Console.Write("Commande, id: " + commande.idRecette + ", prix: "+ commande.prix);
         }
 
-        public Client() { 
+        public override IClientFactory FactoryMethod()
+        {
+            return new Client();
+        }
+
+        public Client()
+        {
+            this.nombre = new Random().Next(1,5);
         }
     }
 }

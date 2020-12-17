@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modèle.SalleRestauration
 {
-    class CommisSalle: Serveur
+    public class CommisSalle: Serveur
     {
         public CommisSalle(int identification, Carre carre) : base(identification, carre)
         {

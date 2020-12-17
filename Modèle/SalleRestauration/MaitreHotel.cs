@@ -13,13 +13,33 @@ namespace Modèle.SalleRestauration
         public int posX { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posY { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        private static MaitreHotel _instance;
+
+        private static readonly object _lock = new object();
+
+        public static MaitreHotel GetInstance(string value)
+        {
+            if (_instance == null)
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance.Value = value;
+                    }
+                }
+            }
+            return _instance;
+        }
+
+        public string Value { get; set; }
+
         public MaitreHotel(List<Carre> carres)
         {
             this.carres = carres;
         }
 
         private static Random aleatoire = new Random();
-        private int nombreClient = aleatoire.Next(1, 11);
         public static int accueillirClient(int nombreClient)
         {
             if (nombreClient > 0)
@@ -32,26 +52,30 @@ namespace Modèle.SalleRestauration
             }
         }
 
-        void verifierPlace()
+        public void verifierPlace()
         {
 
         }
 
-        void attribuerTable()
+        public int attribuerTable(int nombreClient)
         {
+            System.Threading.Thread.Sleep(3000);
+            int num = 1;
             foreach (Carre c in carres)
             {
                 foreach (Table t in c.tables)
                 {
-                    if (Table.nombreChaises >= nombreClient && Table.dispo == true)
+                    if (t.nombreChaises >= nombreClient && t.dispo == true)
                     {
                         bool dispo = false;
+                        //num = t.numero;
                     }
                 }
             }
+            return num;
         }
 
-        void appelerChefRang()
+        public void appelerChefRang()
         {
 
         }

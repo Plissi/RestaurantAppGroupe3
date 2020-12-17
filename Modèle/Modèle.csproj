@@ -46,6 +46,7 @@
     <Compile Include="CLcad.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Commande.cs" />
+    <Compile Include="Creator.cs" />
     <Compile Include="Cuisine\ChefCuisine.cs" />
     <Compile Include="Cuisine\ChefPartie.cs" />
     <Compile Include="Cuisine\CommisCuisine.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="SalleRestauration\SalleContoleur.cs" />
     <Compile Include="SalleRestauration\Serveur.cs" />
     <Compile Include="SalleRestauration\Table.cs" />
+    <Compile Include="Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

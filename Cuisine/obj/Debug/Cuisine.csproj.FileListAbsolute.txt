@@ -1,0 +1,10 @@
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\bin\Debug\Cuisine.exe.config
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\bin\Debug\Cuisine.exe
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\bin\Debug\Cuisine.pdb
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.csprojAssemblyReference.cache
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.Form1.resources
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.Properties.Resources.resources
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.csproj.GenerateResource.cache
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.csproj.CoreCompileInputs.cache
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.exe
+C:\Users\Pline\source\repos\RestaurantApp\Cuisine\obj\Debug\Cuisine.pdb

@@ -12,6 +12,27 @@ namespace Modèle.Cuisine
         public int posX { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int posY { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+
+        private static ChefCuisine _instance;
+
+        private static readonly object _lock = new object();
+
+        public static ChefCuisine GetInstance(string value)
+        {
+            if (_instance == null)
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance.Value = value;
+                    }
+                }
+            }
+            return _instance;
+        }
+        public string Value { get; set; }
+
         void recevoirCommande()
         {
 
